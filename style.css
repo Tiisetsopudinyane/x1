@@ -1,0 +1,15 @@
+body{
+    margin: 20px;
+    text-align: center;
+}
+.posts{
+    border-radius: 5px;
+    border: 1px solid grey;
+    margin: 20px;
+    padding: 50px;
+}
+.createPost{
+    border-radius: 5px;
+    border: 1px solid grey;
+
+}
