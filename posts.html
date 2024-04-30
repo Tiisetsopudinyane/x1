@@ -4,6 +4,8 @@
     <title>Posts</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <script src="//unpkg.com/alpinejs" defer></script>
     <link rel="stylesheet" href="style.css">
     
@@ -15,103 +17,105 @@
                 <h1>Feeds</h1>
             
         </div>
-        <div class="loginButton"><button @click="open=true" >Login</button></div>
+        <div class="loginButton"><button  type="button" class="btn btn-primary" @click="open=true" >Login</button ></div>
         <br>
-        <div class="createPost" x-show="open">
+        <div class="createPost container" x-show="open">
             <p>Create Post</p>
-        <label>Title</label><input type="text"></input><br>
-        <label>Description</label><textarea type="textarea" rows="5" cols="50"></textarea><br>
-        <label>Image</label><input type="file"></input>
-        <h4>OR</h4>
-        <label>Video</label><input type="file"></input>
-        <button type="button">Cancel</button>
-        <button type="button">Post</button>
+        <label>Title</label><input type="text" class="form-control"></input><br>
+        <label>Description</label><textarea class="form-control" type="textarea" rows="5" cols="50"></textarea><br>
+        <label>Image/Video</label><input type="file"></input>
+        <div class="postButtons">
+            <button type="button" class="btn btn-danger">Cancel</button>
+        <button type="button" class="btn btn-success">Post</button>
+        </div>
         </div>
     </div>
 
-    <div class="posts">
-        <p>Full Names: <span>Sam Pudding</span></p>
-    <p>Title: <span>Robotic car</span></p>
-    <p>Description:     
-    </p><span>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem</span>
-    <p>Media</p>
-    <img src="images/th.jpeg">
-    <br>
-    <span>21 Likes</span><span>12 Comments</span><spna>Share</spna>
-    </div>
-    <div class="posts">
-        <p>Full Names: <span>Xolani X</span></p>
-    <p>Title: <span>Robotic car</span></p>
-    <p>Description:     
-    </p>
-    <span>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem</span>
-    <p>Media</p>
-    <img src="images/th1.jpeg">
-    <br>
-    <span>23 Likes</span><span>13 Comments</span><spna>Share</spna>
-    </div>
-    <div class="posts">
-        <p>Full Names: <span>Sam Pudding</span></p>
-    <p>Title: <span>Robotic car</span></p>
-    <p>Description:     
-    </p><span>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem</span>
-    <p>Media</p>
-    <img src="images/th.jpeg">
-    <br>
-    <span>21 Likes</span><span>12 Comments</span><spna>Share</spna>
-    </div>
-    <div class="posts">
-        <p>Full Names: <span>Xolani X</span></p>
-    <p>Title: <span>Robotic car</span></p>
-    <p>Description:     
-    </p>
-    <span>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem</span>
-    <p>Media</p>
-    <img src="images/th1.jpeg">
-    <br>
-    <span>23 Likes</span><span>13 Comments</span><spna>Share</spna>
-    </div>
-    <div class="posts">
-        <p>Full Names: <span>Sam Pudding</span></p>
-    <p>Title: <span>Robotic car</span></p>
-    <p>Description:     
-    </p><span>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem</span>
-    <p>Media</p>
-    <img src="images/th.jpeg">
-    <br>
-    <span>21 Likes</span><span>12 Comments</span><spna>Share</spna>
-    </div>
-    <div class="posts">
-        <p>Full Names: <span>Xolani X</span></p>
-    <p>Title: <span>Robotic car</span></p>
-    <p>Description:     
-    </p>
-    <span>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem</span>
-    <p>Media</p>
-    <img src="images/th1.jpeg">
-    <br>
-    <span>23 Likes</span><span>13 Comments</span><spna>Share</spna>
-    </div>
-    <div class="posts">
-        <p>Full Names: <span>Sam Pudding</span></p>
-    <p>Title: <span>Robotic car</span></p>
-    <p>Description:     
-    </p><span>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem</span>
-    <p>Media</p>
-    <img src="images/th.jpeg">
-    <br>
-    <span>21 Likes</span><span>12 Comments</span><spna>Share</spna>
-    </div>
-    <div class="posts">
-        <p>Full Names: <span>Xolani X</span></p>
-    <p>Title: <span>Robotic car</span></p>
-    <p>Description:     
-    </p>
-    <span>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem</span>
-    <p>Media</p>
-    <img src="images/th1.jpeg">
-    <br>
-    <span>23 Likes</span><span>13 Comments</span><spna>Share</spna>
+    <div class="container">
+        <div class="posts">
+            <p>Full Names: <span>Sam Pudding</span></p>
+        <p>Title: <span>Robotic car</span></p>
+        <p>Description:     
+        </p><span>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem</span>
+        <p>Media</p>
+        <img src="images/th.jpeg">
+        <br>
+        <span >21 Likes</span><span>12 Comments</span><spna>Share</spna>
+        </div>
+        <div class="posts">
+            <p>Full Names: <span>Xolani X</span></p>
+        <p>Title: <span>Robotic car</span></p>
+        <p>Description:     
+        </p>
+        <span>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem</span>
+        <p>Media</p>
+        <img src="images/th1.jpeg">
+        <br>
+        <span>23 Likes</span><span>13 Comments</span><spna>Share</spna>
+        </div>
+        <div class="posts">
+            <p>Full Names: <span>Sam Pudding</span></p>
+        <p>Title: <span>Robotic car</span></p>
+        <p>Description:     
+        </p><span>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem</span>
+        <p>Media</p>
+        <img src="images/th.jpeg">
+        <br>
+        <span>21 Likes</span><span>12 Comments</span><spna>Share</spna>
+        </div>
+        <div class="posts">
+            <p>Full Names: <span>Xolani X</span></p>
+        <p>Title: <span>Robotic car</span></p>
+        <p>Description:     
+        </p>
+        <span>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem</span>
+        <p>Media</p>
+        <img src="images/th1.jpeg">
+        <br>
+        <span>23 Likes</span><span>13 Comments</span><spna>Share</spna>
+        </div>
+        <div class="posts">
+            <p>Full Names: <span>Sam Pudding</span></p>
+        <p>Title: <span>Robotic car</span></p>
+        <p>Description:     
+        </p><span>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem</span>
+        <p>Media</p>
+        <img src="images/th.jpeg">
+        <br>
+        <span>21 Likes</span><span>12 Comments</span><spna>Share</spna>
+        </div>
+        <div class="posts">
+            <p>Full Names: <span>Xolani X</span></p>
+        <p>Title: <span>Robotic car</span></p>
+        <p>Description:     
+        </p>
+        <span>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem</span>
+        <p>Media</p>
+        <img src="images/th1.jpeg">
+        <br>
+        <span>23 Likes</span><span>13 Comments</span><spna>Share</spna>
+        </div>
+        <div class="posts">
+            <p>Full Names: <span>Sam Pudding</span></p>
+        <p>Title: <span>Robotic car</span></p>
+        <p>Description:     
+        </p><span>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem</span>
+        <p>Media</p>
+        <img src="images/th.jpeg">
+        <br>
+        <span>21 Likes</span><span>12 Comments</span><spna>Share</spna>
+        </div>
+        <div class="posts">
+            <p>Full Names: <span>Xolani X</span></p>
+        <p>Title: <span>Robotic car</span></p>
+        <p>Description:     
+        </p>
+        <span>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem</span>
+        <p>Media</p>
+        <img src="images/th1.jpeg">
+        <br>
+        <span>23 Likes</span><span>13 Comments</span><spna>Share</spna>
+        </div>
     </div>
 </body>
 </html>

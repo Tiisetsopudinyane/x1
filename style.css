@@ -7,18 +7,24 @@ body{
     border-radius: 5px;
     border: 1px solid grey;
     margin: 20px;
-    padding: 50px;
+    padding: 20px;
+    text-align: center;
+}
+.postButtons{
+    margin: 5px 0 5px 0;
 }
 .createPost{
     border-radius: 5px;
     border: 1px solid grey;
-
+    margin-top: 20px;
+    width: 50%;
 }
 .header{
     border: 1px solid rgb(125, 125, 247);
     margin: 0;
     height: 50px;
-    padding: 10px ;
+    text-align: center;
+    padding: 2px ;
 }
 .header h1{
     text-align: center;
@@ -26,4 +32,33 @@ body{
 .loginButton{
     margin: 5px 0 5px;
     float: right;
+}
+
+/* Login page styling */
+.loginContainer{
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    width: 50%;
+    border: 1px solid grey;
+    border-radius: 20px;
+}
+.loginContainer{
+    padding: 50px;
+    width: 50%;
+}
+/*create Account styling*/
+.createAccount{
+    width: 30%;
+}
+.createAccountButtons{
+    margin-top: 20px;
+}
+.updatePasswordContainer{
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    width: 50%;
+    border: 1px solid grey;
+    border-radius: 20px;
 }
